@@ -32,6 +32,9 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 .reveal footer, .reveal header, .reveal hgroup, .reveal menu, .reveal nav, .reveal section {
   display: block; }
 
+blockquote{
+  background: #000 !important;
+}
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -484,7 +487,7 @@ body {
 .reveal {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 500px;
   overflow: hidden;
   -ms-touch-action: none;
       touch-action: none; }
@@ -505,13 +508,13 @@ body {
   pointer-events: none;
   overflow: visible;
   z-index: 1;
-  text-align: center;
+  /* text-align: center; */
   -webkit-perspective: 600px;
-          perspective: 600px;
+  perspective: 600px;
   -webkit-perspective-origin: 50% 40%;
-          perspective-origin: 50% 40%; }
-
-.reveal .slides > section {
+  perspective-origin: 50% 40%; }
+  
+  .reveal .slides > section {
   -ms-perspective: 600px; }
 
 .reveal .slides > section,
@@ -1030,6 +1033,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  background: url('../image/poem.jpg') center no-repeat;
+  background-size: 100% 100%;
   -webkit-perspective: 600px;
           perspective: 600px; }
 
